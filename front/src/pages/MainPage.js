@@ -30,7 +30,10 @@ function MainPage(){
         <TextField  name="school" value={school} label="학교" onChange={onChange}/><br/>
         <TextField  name="year" value={year} label="년도" onChange={onChange}/><br/>
         <Button variant="contained" onClick={onClick}>이동</Button>
+        <Link to="/signup">회원가입</Link>
+        <div>
         <Link to="/photo">3주차 결과물 보러가기</Link>
+        </div>
       </>
     );
 }
