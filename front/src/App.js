@@ -6,7 +6,8 @@ import PageFrame from './components/PageFrame';
 import Register from './pages/Register';
 import PageHeader from './components/PageHeader';
 import Photo from './pages/Photo';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/register' exact component={Register}></Route>
           <Route path='/' exact component={MainPage}></Route>
           <Route path='/photo' exact component={Photo}></Route>
+          <Route path='/registercomplete' exact component={RegisterPage}></Route>
         </Switch>
       </BrowserRouter>
     </PageFrame>

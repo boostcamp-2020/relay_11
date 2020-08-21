@@ -1,0 +1,27 @@
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    float: left;
+    height: 300px;
+    min-width: 300px;
+    background-color:#a0c1b8;
+    position: relative;
+    border-radius: 50%;
+    text-align:center;
+    margin: 20px;
+    vertical-align: middle;
+    font-size:20px;
+    /* vertical-align:middle; */
+}
+p {
+    margin-top: 70px;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+}
