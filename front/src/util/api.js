@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+const URL = "http://0.0.0.0:80";
 
 
 const instance = axios.create({
@@ -21,4 +21,15 @@ const instance = axios.create({
   
   export const deleteData = (restUrl = '', data = {}) => {
     return instance.delete(restUrl, data);
+  };
+
+  export const signUpApi = (params) => {
+    return axios
+      .post(`${URL}/signup`, params)
+      .then((response) => {
+        return response.data;
+      })
+      .catch((error) => {
+        return error;
+      });
   };
